@@ -1,0 +1,7 @@
+<div class="container mt-5">
+  <app-todo-input (onTodoAdded)="onAdded($event)"></app-todo-input>
+  <app-todo-item
+    (onTodoDelete)="onDelete($event)"
+    [todos]="todos"
+  ></app-todo-item>
+</div>

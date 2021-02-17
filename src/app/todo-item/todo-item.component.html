@@ -1,0 +1,14 @@
+<ul class="list-group" *ngFor="let todo of todos; let i = index">
+  <li
+    class="list-group-item d-flex justify-content-between align-items-center mb-1"
+  >
+    <span
+      ><b>{{ i + 1 }}</b> - {{ todo.title }}</span
+    >
+    <div class="d-flex">
+      <button class="btn btn-outline-danger btn-sm" (click)="onDelete(i)">
+        Delete
+      </button>
+    </div>
+  </li>
+</ul>
